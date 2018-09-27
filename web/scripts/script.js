@@ -1,7 +1,7 @@
 var loadedData = {};
 
 function getData() {
-    jQuery.getJSON("data/comments.json", function (data) {
+    jQuery.getJSON("https://sevedgeignitefa.azurewebsites.net/api/GetComments", function (data) {
         loadedData = data;
     }).then(function () {
         // update view
@@ -24,6 +24,5 @@ function updateView(el, obj) {
 
     var listEl = $(el);
     listEl.empty();
-    console.log(rows);
     listEl.append(rows.join("")); // note: defaults to comma...
 }
