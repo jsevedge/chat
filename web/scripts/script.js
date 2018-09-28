@@ -18,7 +18,7 @@ function postData(url, data) {
         contentType: "application/json; charset=utf-8",
         dataType: "json"
     }).then(function () {
-        console.log(`Data POSTed`)
+        //console.log(`Data POSTed`)
     });
 }
 
